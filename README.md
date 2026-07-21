@@ -24,18 +24,4 @@ A collection of foundational Python scripts designed to practice core data manip
 *   **MLOps/LLM Foundations**: Data pipeline structures, stream reading large files, structured data parsing (JSON/CSV).
 *   **Core Skills**: Advanced file handling, input sanitation, modular script design.
 
-## 📦 Getting Started
 
-### Prerequisites
-Make sure you have Python installed on your system.
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com
-   ```
-2. Navigate into the project directory:
-   ```bash
-   cd your-repo-name
-   ```
-3. Run any script directly using Python.
