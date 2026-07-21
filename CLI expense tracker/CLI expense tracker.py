@@ -1,7 +1,11 @@
-import json, argparse
+import json
+import argparse
 
-# Open and Read contents of expenses.json with exception handling
 def load_expenses():
+    """
+    Ingests and parses the JSON data store.
+    Handles missing file exceptions safely by returning an empty list.
+    """
     try:
         with open('expenses.json', 'r') as file:
             return json.load(file)
@@ -10,35 +14,57 @@ def load_expenses():
         return []
 
 def save_expenses(expenses):
+    """
+    Serializes the in-memory payload back into a structured JSON file.
+    Applies an indentation level of 4 for human-readable layout.
+    """
     with open('expenses.json', 'w') as file:
         json.dump(expenses, file, indent=4)
         return expenses
 
 def add_expenses(item):
+    """
+    Appends a newly structured data record to the existing dataset.
+    Triggers an immediate file-write pipeline update to save changes.
+    """
     current = load_expenses()
     current.append(item)
     save_expenses(current)
 
 def delete_expenses(id):
-        current = [i for i in load_expenses() if i["id"] != id]
-        save_expenses(current)
+    """
+    Filters out a specific record from the data payload using list comprehension.
+    Performs a safe state update by using .get() to check unique 'id' values.
+    """
+    current = [i for i in load_expenses() if i.get("id") != id]
+    save_expenses(current)
 
 
 def list_expenses(category=None):
+    """
+    Iterates through the data store and streams formatted key-value pairs to stdout.
+    Uses fallback dictionary logic to safely parse fields without crashing.
+    """
     for i in load_expenses():
-        if category is None or i["category"] == category:
-            for key, value in i.items():
-                print(f"{key}: {value}")
+        # Safely read the category attribute using .get() to prevent missing key errors
+        item_category = i.get("category")
+        if category is None or (item_category and item_category.lower() == category.lower()):
+            # Define fallback structural schema keys to guarantee clean terminal output
+            schema_keys = ["id", "name", "category", "amount", "date", "description"]
+            for key in schema_keys:
+                print(f"{key}: {i.get(key, 'N/A')}")
             print()
 
-list_expenses()
-
+# list_expenses()
 # delete_expenses()
-save_expenses(load_expenses())
-
+# save_expenses(load_expenses())
 
 
 def main():
+    """
+    Defines the Command Line Interface (CLI) routing matrix using argparse.
+    Maps subcommands (add, delete, list) to their respective functions.
+    """
     parser = argparse.ArgumentParser(description="Simple expense tracker")
     subparsers = parser.add_subparsers(dest="command")
 
@@ -59,7 +85,8 @@ def main():
 
     if args.command == "add":
         current = load_expenses()
-        new_id = max([e["id"] for e in current], default=0) + 1
+        # Uses .get() to safely calculate a unique incrementing key index
+        new_id = max([e.get("id", 0) for e in current], default=0) + 1
         new_expense = {
             "id": new_id,
             "name": args.name,
@@ -83,6 +110,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-

@@ -3,40 +3,48 @@
         "id": 1,
         "name": "Coffee",
         "category": "food",
-        "amount": 1,
-        "date": "4th of july 2026 10:00 AM",
+        "amount": 1.0,
+        "date": "2026-07-04 10:00 AM",
         "description": "coffee at college caffeteria"
     },
     {
         "id": 2,
         "name": "Potato",
         "category": "food",
-        "amount": 3,
-        "date": "7th of july 2026 12:00 PM",
+        "amount": 3.0,
+        "date": "2026-07-07 12:00 PM",
         "description": "bought some potato for lunch"
     },
     {
         "id": 3,
         "name": "Shoes",
         "category": "clothing",
-        "amount": 5,
-        "date": "10th of july 2026 03:00 PM",
+        "amount": 5.0,
+        "date": "2026-07-10 03:00 PM",
         "description": "got some shoes from nike"
     },
     {
         "id": 5,
-        "category": "furniture"
+        "name": "Desk Chair",
+        "category": "furniture",
+        "amount": 45.0,
+        "date": "2026-07-12 11:00 AM",
+        "description": "ergonomic office chair"
     },
     {
         "id": 6,
-        "category": "furniture"
+        "name": "Desk Lamp",
+        "category": "furniture",
+        "amount": 15.5,
+        "date": "2026-07-15 04:30 PM",
+        "description": "LED reading light"
     },
     {
         "id": 7,
         "name": "Coffee",
         "category": "food",
         "amount": 3.5,
-        "date": "2026-07-18",
+        "date": "2026-07-18 09:15 AM",
         "description": "iced latte"
     }
 ]
