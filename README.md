@@ -55,6 +55,7 @@ core-python-fundamentals/
 Clone this entire engineering ecosystem to your local system:
 ```bash
 git clone https://github.com
-cd your-repo-name
+cd core-python-fundamentals
+
 ```
 Run any script directly using your local Python execution layout environment.
