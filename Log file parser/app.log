@@ -1,0 +1,40 @@
+2026-07-18 09:00:00 WARNING Deprecated API endpoint called
+2026-07-18 09:01:59 ERROR Connection refused from 192.168.1.12
+2026-07-18 09:06:29 INFO User admin logged in
+2026-07-18 09:07:43 WARNING Deprecated API endpoint called
+2026-07-18 09:11:22 WARNING Slow response time: 3200ms
+2026-07-18 09:15:54 ERROR Failed to write to disk
+2026-07-18 09:19:59 ERROR Failed to connect to database at 192.168.1.5
+2026-07-18 09:20:17 INFO Backup completed successfully
+2026-07-18 09:22:18 WARNING Slow response time: 3200ms
+2026-07-18 09:22:42 WARNING Disk space low: 12% remaining
+2026-07-18 09:23:20 WARNING Disk space low: 12% remaining
+2026-07-18 09:27:06 WARNING Slow response time: 3200ms
+2026-07-18 09:28:32 INFO User john logged in
+2026-07-18 09:31:41 ERROR Failed to write to disk
+2026-07-18 09:36:12 INFO Cache cleared
+2026-07-18 09:39:19 WARNING Disk space low: 12% remaining
+2026-07-18 09:40:03 ERROR Timeout connecting to 10.0.0.4
+2026-07-18 09:42:17 WARNING Deprecated API endpoint called
+2026-07-18 09:43:33 WARNING High memory usage: 87%
+2026-07-18 09:46:36 INFO Backup completed successfully
+2026-07-18 09:50:07 ERROR Failed to write to disk
+2026-07-18 09:53:09 ERROR Failed to connect to database at 192.168.1.5
+2026-07-18 09:57:03 WARNING High memory usage: 87%
+2026-07-18 09:59:21 WARNING Deprecated API endpoint called
+2026-07-18 10:02:29 WARNING Slow response time: 3200ms
+2026-07-18 10:04:42 WARNING High memory usage: 87%
+2026-07-18 10:07:05 WARNING Disk space low: 12% remaining
+2026-07-18 10:07:25 WARNING Slow response time: 3200ms
+2026-07-18 10:07:42 WARNING Disk space low: 12% remaining
+2026-07-18 10:10:34 ERROR Failed to connect to database at 192.168.1.5
+2026-07-18 10:13:26 INFO Cache cleared
+2026-07-18 10:16:42 ERROR Timeout connecting to 10.0.0.4
+2026-07-18 10:18:10 WARNING Disk space low: 12% remaining
+2026-07-18 10:18:36 WARNING Slow response time: 3200ms
+2026-07-18 10:20:59 ERROR Timeout connecting to 10.0.0.4
+2026-07-18 10:25:03 WARNING Slow response time: 3200ms
+2026-07-18 10:29:51 WARNING High memory usage: 87%
+2026-07-18 10:33:47 ERROR Null pointer exception in module auth
+2026-07-18 10:38:22 ERROR Timeout connecting to 10.0.0.4
+2026-07-18 10:42:24 WARNING Deprecated API endpoint called
